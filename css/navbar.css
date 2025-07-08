@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    /* background-color: white; */
+    list-style: none;
+    /* padding: 10px; */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.logout-btn a {
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
