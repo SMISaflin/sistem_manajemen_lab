@@ -69,6 +69,7 @@ include "../koneksi.php";
     </style>
 </head>
 <body>
+    <?php include "navbar.php"; ?>
     <div class="container">
         <h2>Inventaris Lab Komputer</h2>
         <a href="beranda.php" class="btn">← Kembali ke Beranda</a>

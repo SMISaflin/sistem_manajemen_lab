@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: wheat;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,6 @@ body {
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #fff8dc; /* light wheat tone */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);

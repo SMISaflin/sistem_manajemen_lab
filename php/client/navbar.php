@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>sistem Manajemen lab</h1>
+        <h1>Sistem Manajemen Lab</h1>
         <nav>
             <ul>
                 <li><a href="beranda.php">beranda</a></li>
@@ -19,7 +19,7 @@
             </ul>
         </nav>
         <div class="logout-btn">
-            <a href="logout.php">logout</a>
+            <a href="../logout.php">logout</a>
         </div>
 </header>
 </body>

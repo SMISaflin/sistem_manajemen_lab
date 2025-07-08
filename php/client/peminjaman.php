@@ -1,6 +1,5 @@
 <?php
 include "../koneksi.php";
-include "../session.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -90,14 +89,14 @@ include "../session.php";
     </style>
 </head>
 <body>
-
+        <?php include "navbar.php"; ?>
     <div class="hero">
         <h1>Halaman Peminjaman Barang</h1>
         <p>Kelola peminjaman barang laboratorium dengan mudah dan cepat.</p>
     </div>
 
     <div class="section">
-        <p>Halo, <strong><?= $_SESSION['username']; ?></strong>. Berikut adalah daftar peminjaman Anda.</p>
+        <p>Halo, Anak Kucai</strong>. Berikut adalah daftar peminjaman Anda.</p>
 
         <a class="btn-tambah" href="form_peminjaman.php">+ Tambah Peminjaman</a>
 
@@ -112,32 +111,12 @@ include "../session.php";
                 </tr>
             </thead>
             <tbody>
-                <?php
-                $no = 1;
-                $username = $_SESSION['username'];
-                $query = mysqli_query($koneksi, "SELECT * FROM peminjaman ORDER BY id ASC");
-
-                if (mysqli_num_rows($query) > 0) {
-                    while ($row = mysqli_fetch_assoc($query)) {
-                        echo "<tr>
-                                <td>{$no}</td>
-                                <td>{$row['namabarang']}</td>
-                                <td>{$row['tanggalpinjam']}</td>
-                                <td>{$row['tanggalkembali']}</td>
-                                <td>{$row['status']}</td>
-                              </tr>";
-                        $no++;
-                    }
-                } else {
-                    echo "<tr><td colspan='5'>Belum ada data peminjaman.</td></tr>";
-                }
-                ?>
             </tbody>
         </table>
     </div>
 
     <div class="footer">
-        &copy; <?= date("Y"); ?> Sistem Manajemen Lab. All rights reserved.
+        &copy; 2025 Sistem Manajemen Lab. All rights reserved.
     </div>
 
 </body>

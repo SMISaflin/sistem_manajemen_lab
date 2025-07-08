@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/kontak.css">
 </head>
 <body>
+    <?php include "navbar.php"; ?>
     <div class="container">
         <h1>Hubungi Kami</h1>
         <form action="kontak.php" method="POST">

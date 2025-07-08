@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../../css/tentang.css">
 </head>
 <body>
+    <?php include "navbar.php"; ?>
     <div class="container">
-        <header>
+        <div class="kucai">
             <h1>Tentang Sistem Management Lab</h1>
-        </header>
+        </div>
         <div class="content">
             <section class="about-section">
                 <h2>Apa itu Sistem Management Lab?</h2>

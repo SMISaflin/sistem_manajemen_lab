@@ -21,7 +21,7 @@ body {
 }
 
 /* HEADER */
-header {
+.kucai {
     background-color: #3498db;
     padding: 25px;
     border-radius: 8px;
@@ -30,7 +30,7 @@ header {
     margin-bottom: 30px;
 }
 
-header h1 {
+.kucai h1 {
     font-size: 26px;
 }
 
