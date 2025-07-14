@@ -24,6 +24,7 @@
                 <input type="text" name="lokasi" id="lokasi">
                 <label for="foto">Foto : </label>
                 <input type="file" name="foto" id="foto">
+                <button type="submit" name="tambah">Tambah Data</button>
             </form>
         </div>
     </div>
