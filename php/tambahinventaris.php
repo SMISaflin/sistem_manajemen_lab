@@ -1,3 +1,18 @@
+<?php 
+    include "koneksi.php";
+
+    if(isset($_POST['tambah'])) {
+        $barang = $_POST['barang'];
+        $kategori = $_POST['kategori'];
+        $jumlah = $_POST['jumlah'];
+        $kondisi = $_POST['kondisi'];
+        $lokasi = $_POST['lokasi'];
+        $foto = $_FILES['foto']['name'];
+        $tmp = $_FILES['foto']['tmp_name'];
+
+        move_uploaded_file ($tmp, 'image /'. $foto);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
