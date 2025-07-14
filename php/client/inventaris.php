@@ -84,11 +84,11 @@ include "../koneksi.php";
         <?php
         $query = mysqli_query($koneksi, "SELECT * FROM inventaris");
         $no = 1;
-
         if (mysqli_num_rows($query) > 0) {
             while ($data = mysqli_fetch_assoc($query)) {
                 echo "
                 <div class='card'>
+                    <img src='../../image/{$data['foto']}' alt='Foto {$data['barang']}' style='width:100%; height:200px; object-fit:cover; border-radius:8px;'>
                     <h3>{$no}. {$data['barang']}</h3>
                     <p><strong>Kategori:</strong> {$data['kategori']}</p>
                     <p><strong>Jumlah:</strong> {$data['jumlah']}</p>
