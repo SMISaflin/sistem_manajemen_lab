@@ -1,11 +1,77 @@
+/* File: tambahdata.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(252, 236, 207);
+    color: #333;
+}
+
 .container {
-    margin: 20px 20px 20px 320px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: wheat;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .title {
     text-align: center;
+    font-size: 28px;
+    color: #8b4513;
+    margin-bottom: 20px;
 }
 
 .box-input {
-    
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #5c4033;
+}
+
+input[type="text"],
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #d2b48c;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    background-color: #fffaf0;
+}
+
+input[type="file"] {
+    background-color: #f5deb3;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    outline: none;
+    border-color: #cd853f;
+    background-color: #fff5e1;
+}
+
+/* Tambahkan gaya untuk tombol jika nanti diperlukan */
+button {
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #deb887;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d2b48c;
 }
