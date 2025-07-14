@@ -17,6 +17,14 @@ if (isset($_POST['login'])) {
         if (password_verify($password, $row['password'])) {
             $_SESSION['username'] = $row['username'];
             $_SESSION['email'] = $row['email'];
+            $_SESSION['role'] = $row['role'];
+
+            $redirectPage = "dashboard.php";
+            if ($row['role'] === 'admin') {
+                $redirectPage = "dashboard.php";
+            } else {
+                $redirectPage = "client/beranda.php";
+            }
 
             $alertScript = '
                 <script>
@@ -27,7 +35,7 @@ if (isset($_POST['login'])) {
                         timer: 2000,
                         showConfirmButton: false
                     }).then(() => {
-                        window.location.href = "dashboard.php";
+                        window.location.href = "' . $redirectPage . '";
                     });
                 </script>
             ';

@@ -15,7 +15,7 @@ if(isset($_POST['regis'])){
         $alert = "error";
     } else {
         $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-        $query = "INSERT INTO user (email, username, password) VALUES ('$email','$username','$passwordHash')";
+        $query = "INSERT INTO user (email, username, password, role) VALUES ('$email','$username','$passwordHash', 'client')";
         $insert = mysqli_query($koneksi, $query);
 
         if($insert){

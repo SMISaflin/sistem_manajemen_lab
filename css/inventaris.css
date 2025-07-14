@@ -14,6 +14,7 @@ header h1 {
 }
 
 .inventaris-container {
+    margin: 20px 0;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -51,4 +52,16 @@ button.edit {
 
 button.delete {
     background-color: #d00000;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+    color: white;
+    background-color: dodgerblue;
+    text-decoration: none;
 }

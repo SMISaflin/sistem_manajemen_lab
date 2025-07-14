@@ -17,7 +17,7 @@
         <header>
             <h1>Daftar Inventaris Laboratorium</h1>
         </header>
-
+        <a href="tambahinventaris.php" class="add-btn"> + Tambah Data</a>
         <div class="inventaris-container">
             <table>
                 <thead>
