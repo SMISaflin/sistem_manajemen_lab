@@ -49,8 +49,8 @@ include "../koneksi.php";
         .card {
             background-color: #fff;
             border-radius: 10px;
+            /* padding: 20px; */
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            padding: 20px;
             transition: transform 0.2s ease;
         }
 
@@ -60,12 +60,18 @@ include "../koneksi.php";
 
         .card h3 {
             margin-top: 0;
+            padding: 20px 0 0 20px;
             color: #34495e;
         }
-
+        
         .card p {
             margin: 5px 0;
+            padding: 0 20px;
             color: #555;
+        }
+
+        .p {
+            padding-bottom: 20px;
         }
 
         .no-data {
@@ -88,12 +94,14 @@ include "../koneksi.php";
             while ($data = mysqli_fetch_assoc($query)) {
                 echo "
                 <div class='card'>
-                    <img src='../../image/{$data['foto']}' alt='Foto {$data['barang']}' style='width:100%; height:200px; object-fit:cover; border-radius:8px;'>
-                    <h3>{$no}. {$data['barang']}</h3>
-                    <p><strong>Kategori:</strong> {$data['kategori']}</p>
-                    <p><strong>Jumlah:</strong> {$data['jumlah']}</p>
-                    <p><strong>Kondisi:</strong> {$data['kondisi']}</p>
-                    <p><strong>Lokasi:</strong> {$data['lokasi']}</p>
+                    <img src='../../image/{$data['foto']}' alt='Foto {$data['barang']}' style='width:100%; height:200px; object-fit:cover; border-top-right-radius:10px; border-top-left-radius:10px;'>
+                    <h3>{$data['barang']}</h3>
+                    <div class='p'>
+                        <p><strong>Kategori:</strong> {$data['kategori']}</p>
+                        <p><strong>Jumlah:</strong> {$data['jumlah']}</p>
+                        <p><strong>Kondisi:</strong> {$data['kondisi']}</p>
+                        <p><strong>Lokasi:</strong> {$data['lokasi']}</p>
+                    </div>
                 </div>";
                 $no++;
             }
